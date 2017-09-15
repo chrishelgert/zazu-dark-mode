@@ -1,0 +1,25 @@
+{
+  "name": "zazu-dark-mode",
+  "version": "1.0.0",
+  "description": "Zazu Plugin to toggle the dark mode on macOS",
+  "blocks": {
+    "input": [
+      {
+        "id": "darkMode",
+        "type": "PrefixScript",
+        "prefix": "dark-mode",
+        "space": false,
+        "args": "None",
+        "script": "src/index.js",
+        "connections": ["Open"]
+      }
+    ],
+    "output": [
+      {
+        "id": "Open",
+        "type": "OpenInBrowser",
+        "url": "{value}"
+      }
+    ]
+  }
+}

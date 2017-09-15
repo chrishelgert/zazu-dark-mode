@@ -1,0 +1,45 @@
+{
+  "name": "zazu-dark-mode",
+  "version": "1.0.0",
+  "description": "Zazu Plugin to toggle the dark mode on macOS",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "standard --verbose | snazzy",
+    "test": "npm run lint && jest"
+  },
+  "license": "MIT",
+  "author": "Chris Helgert",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrishelgert/zazu-dark-mode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chrishelgert/zazu-dark-mode/issues"
+  },
+  "homepage": "https://github.com/chrishelgert/zazu-dark-mode#readme",
+  "keywords": [
+    "zazu",
+    "macOS",
+    "dark-mode"
+  ],
+  "dependencies": {
+    "dark-mode": "^3.0.0"
+  },
+  "devDependencies": {
+    "husky": "^0.14.0",
+    "jest": "^20.0.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/src/*.js"
+    ]
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
+  }
+}
