@@ -11,6 +11,8 @@
 
 Simple type in `dark-mode` and execute the command to toggle the dark mode.
 
+![screenshot](./screenshot.png)
+
 ## Install
 
 Add `chrishelgert/zazu-dark-mode` to your plugins block inside your `.zazurc.json` file.

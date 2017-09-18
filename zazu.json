@@ -5,20 +5,26 @@
   "blocks": {
     "input": [
       {
-        "id": "darkMode",
-        "type": "PrefixScript",
-        "prefix": "dark-mode",
-        "space": false,
-        "args": "None",
-        "script": "src/index.js",
-        "connections": ["Open"]
+        "id": "dark-mode-keyword",
+        "type": "Keyword",
+        "keyword": "dark-mode",
+        "title": "Toggle dark mode",
+        "icon": "fa-lightbulb-o",
+        "connections": ["dark-mode-toggle"]
       }
     ],
     "output": [
       {
-        "id": "Open",
-        "type": "OpenInBrowser",
-        "url": "{value}"
+        "id": "dark-mode-toggle",
+        "type": "UserScript",
+        "script": "src/index.js",
+        "connections": ["dark-mode-notify"]
+      },
+      {
+        "id": "dark-mode-notify",
+        "type": "SendNotification",
+        "title": "Dark mode",
+        "message": "{value}"
       }
     ]
   }
