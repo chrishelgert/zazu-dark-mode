@@ -1,5 +1,4 @@
 language: node_js
-
 node_js:
   - 6
   - 7
@@ -15,4 +14,8 @@ before_script: greenkeeper-lockfile-update
 after_script: greenkeeper-lockfile-upload
 
 after_success:
-    - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash)
+
+env:
+  matrix:
+    secure: WaawsLkO+GTHPGTU6dmoUpVZnSxx81JOlFglClXzdvin/VaLRDsaxFDw1xbFjW8Ps94ggZz1Tu8FicksQcBADMckVfbaYKDfbMduhDkGbj2bxRWYSA6hr2hOALtyKc3XhxNmX51otWsx0YP7JhYuzJNgUSJKyxtMmNJtLNC05OvaxdOVRjVlzi3NUXoO0mfZn0EcIcidC+2dAKi+NMHNxqpnjYcSFDQ7N6I5puwfPINMH0+c4XsErNUwX0/FvG0+PTyVI2lv1R+hg1haDVd2gJx29gBVcXQwKUxsbjIeLXvU4iZje+7d16nS47NZ1oL7/0sevl/IjHTwjo3luMPGRe3tNxGtxocy/EBPNxHOIdQBmGqZOFVkGYVzi9dp76EGHMVFhrva7230m/YcGfezqW1yNDFthm9V2+AWtxw134sm/0YeRCOjjPAq22/7GC/tjMtlEnr/xzX/KV9qV/JpDIkGm8SaiTz+Sm8H1Jz3Mdjtzg3sg08q+StVEUQ8X33DWGoEVVIW6MIh44EXe21otWwfdIETwGEYG7GH+6/+Zz/Ijy3wuUVM/81Igd2i3AEROLhbJ3YhRbUyb8UA1h5ixiriOdaA1tbwSCpq48Fpka7/8GWE1SKAcvltIjMhe31wWbsUie+SjJWzRSW6qpe6/w+yRkhNMPXbkbVhum7MizM=
