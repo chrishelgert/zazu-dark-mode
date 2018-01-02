@@ -33,4 +33,4 @@ Add `chrishelgert/zazu-dark-mode` to your plugins block inside your `.zazurc.jso
 
 ## LICENSE
 
-Copyright (c) 2017 Chris Helgert. See [License](./LICENSE) for details.
+Copyright (c) 2017-present Chris Helgert. See [License](./LICENSE) for details.
