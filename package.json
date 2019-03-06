@@ -26,7 +26,6 @@
     "dark-mode": "^3.0.0"
   },
   "devDependencies": {
-    "husky": "^0.14.0",
     "jest": "^21.2.1",
     "snazzy": "^7.0.0",
     "standard": "^10.0.1"
